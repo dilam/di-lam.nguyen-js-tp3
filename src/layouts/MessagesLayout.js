@@ -12,7 +12,7 @@ const MessageLayout = props => (
         }}
       >
         <Layout.Content style={{ padding: "0 24px", height: "calc(80%)" }}>
-          Content
+          {props.renderMessages()}
         </Layout.Content>
       </Layout>
     </Layout.Content>
@@ -23,7 +23,7 @@ const MessageLayout = props => (
         height: "calc(20%)"
       }}
     >
-      Write Message
+      {props.renderInput()}
     </Layout.Footer>
   </Layout>
 );
